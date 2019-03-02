@@ -4,11 +4,7 @@ int main(int argc, char const *argv[]) {
   ifstream fin("data.in");
   ifstream fout("data.out");
 
-  // int nnDesc[] = {i , ..., h, ..., o};
-
-
   int *nnDesc, layers;
-
 
   fin >> layers;
   nnDesc = new int[layers];
@@ -29,7 +25,6 @@ int main(int argc, char const *argv[]) {
 
     for (size_t j = 0; j < nnDesc[0]; j++) {
       fin >> trainInp[i][j];
-
     }
 
     for (size_t j = 0; j < nnDesc[layers - 1]; j++) {
@@ -38,42 +33,8 @@ int main(int argc, char const *argv[]) {
   }
 
 
-
-
-
-
-
-
-
-
-
   nn *brain = new nn(layers, nnDesc);
   brain->train(trainInp, trainOut, ntrain, err);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   for (size_t i = 0; i < layers; i++) {

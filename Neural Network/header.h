@@ -12,24 +12,28 @@ using namespace std;
 
 
 double randRange(double, double);
+double square(double);
 double sigmoid(double);
+double sigmoid_derivate(double);
 
 
 class nn {
 private:
   int *nlay, noLayers,
-      *nbyas;
-  double ***w, **lay, **bias;
-  double lr = 0.1;
+      *nbyas, nc;
+  double ***w, **lay, **bias,
+          *cerr, **cw;
+  double lr = 0.02;
   void initWieghts();
 
 public:
 
   nn(int, int[]);
   ~nn();
+  void setLearningRate(double lr);
   double train(double**, double**, int, double);
   double *  feedforward(double*);
-  double backpropagation(double);
+  double backpropagation();
 };
 
 #endif
