@@ -5,9 +5,7 @@ int main(int argc, char const *argv[]) {
     ifstream fout("data.out");
 
     cout<<"Hello world!\n";
-    for (auto i = 0; i < 10; i++) {
-      cout<<i;
-    }
+
     fout.close();
     fin.close();
     return 0;
