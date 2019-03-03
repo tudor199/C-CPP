@@ -1,18 +1,14 @@
-#include "func.h"
+#include "header.h"
 
 int main(int argc, char const *argv[]) {
-    FILE *fin, *fout;
-	if ((fin = fopen("data.in", "r")) == NULL) {
-		return -1;
-	}
-	if ((fout = fopen("data.in", "w")) == NULL) {
-    	fclose(fin);
-		return -1;
-    }
+  FILE *fin  = fopen("data.in", "r"),
+       *fout = fopen("data.in", "w");
 
-    //code
+  printf("%s\n", "Hello world!");
 
-	fclose(fin);
-	fclose(fout);
-	return 0;
+  // code
+
+  fclose(fin);
+  fclose(fout);
+  return 0;
 }
