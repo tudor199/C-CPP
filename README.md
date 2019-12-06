@@ -1,1 +1,2 @@
-# C/C++ Implementations of Algorithms
+# C/C++
+C/C++ Implementations of Algorithms
