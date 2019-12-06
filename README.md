@@ -1,2 +1,1 @@
-# programing
-Coding in different programing languages.
+# C/C++ Implementations of Algorithms
