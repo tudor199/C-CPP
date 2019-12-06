@@ -1,0 +1,12 @@
+CC=g++
+CFLAGS=-std=c++14
+EXEC=exe
+
+run: build
+	./$(EXEC)
+
+build: main.cpp hashtable.cpp
+	$(CC) $(FLAGS) -o $(EXEC) $^
+
+clean:
+	rm -f $(EXEC)
