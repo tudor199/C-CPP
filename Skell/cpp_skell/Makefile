@@ -1,2 +1,2 @@
 build:
-	g++ main.cpp func.cpp -o exe -lm ; ./exe
+	g++ main.cpp -o exe -lm ; ./exe < data.in

@@ -1,12 +1,12 @@
-#include "header.h"
+#include <iostream>
+
+using namespace std;
 
 int main(int argc, char const *argv[]) {
-    ifstream fin("data.in");
-    ifstream fout("data.out");
 
-    cout<<"Hello world!\n";
+    for (int i = 0; i < 10; ++i) {
+        cout << i << endl;
+    }
 
-    fout.close();
-    fin.close();
     return 0;
 }

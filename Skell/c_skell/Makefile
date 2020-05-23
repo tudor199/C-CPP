@@ -1,2 +1,2 @@
 build:
-	gcc main.c func.c -o exe -lm ; ./exe
+	gcc main.c -o exe -lm && ./exe <data.in
